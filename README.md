@@ -55,23 +55,6 @@ Para extrair os dados de um produto no Ifood:
 O arquivo CSV gerado seguirá a seguinte estrutura de colunas:
 Pronto para NuvemShop
 
-AEste README foi projetado para ser informativo, fácil de usar e profissional, seguindo as melhores práticas do GitHub. Ele cobre desde a descrição do projeto até a estrutura do CSV gerado, além de uma seção de contribuição e licença.
-
-## 📸 Screenshots (Opcional, mas Altamente Recomendado)
-
-Para tornar este `README` ainda mais claro e visualmente atraente, considere adicionar algumas capturas de tela nas seções abaixo:
-
-* Uma imagem da extensão instalada na barra do Chrome.
-* Uma imagem do modal do produto no Ifood.
-* Uma imagem do pop-up da extensão em ação.
-* Uma imagem de um trecho do arquivo CSV gerado.
-
-Você pode adicioná-las na pasta `assets/images` (crie se não existir) e referenciá-las assim:
-
-`![Descrição da Imagem](assets/images/nome_da_sua_imagem.png)`
-
----
-
 ## 🛠️ Desenvolvimento e Contribuição
 
 Este projeto está aberto a contribuições! Se você encontrou um bug, tem uma sugestão de melhoria ou gostaria de adicionar um novo recurso, sinta-se à vontade para:

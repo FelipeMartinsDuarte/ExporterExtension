@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Importador Ifood/Nuvemshop (Base)",
+  "version": "1.0",
+  "description": "Uma extensão base para importar produtos de um site para o Nuvemshop.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.ifood.com.br/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.ifood.com.br/*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

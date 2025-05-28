@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Importador Ifood</title>
+  <meta charset="UTF-8">
+  <style>
+    :root {
+      --primary-color: #5C6BC0; /* Um azul mais suave, parecido com o do design */
+      --secondary-color: #8D9EFF;
+      --text-color: #333;
+      --background-color: #f8f9fa;
+      --border-radius: 8px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      --success-color: #4CAF50;
+      --error-color: #f44336;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; /* Fonte mais moderna */
+      width: 320px; /* Um pouco mais largo para melhor espaçamento */
+      padding: 20px;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+
+    p {
+      margin-bottom: 15px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    button {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      font-size: 1.1em;
+      font-weight: 500;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      width: 100%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    button:hover {
+      background-color: var(--secondary-color);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    button:active {
+      background-color: #455A8A; /* Cor mais escura ao clicar */
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    #statusMessage {
+      margin-top: 20px;
+      font-weight: 500;
+      text-align: center;
+      min-height: 20px; /* Garante que o espaço seja reservado */
+    }
+
+    .status-success {
+      color: var(--success-color);
+    }
+
+    .status-error {
+      color: var(--error-color);
+    }
+
+    #downloadLink {
+      display: none; /* <-- ESSA LINHA GARANTE QUE ELE COMECE ESCONDIDO */
+      margin-top: 20px;
+      padding: 12px;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: var(--border-radius);
+      text-align: center;
+      /* display: block; <-- REMOVIDO DAQUI, SERÁ DEFINIDO VIA JS QUANDO NECESSÁRIO */
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      font-weight: 500;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #downloadLink:hover {
+        background-color: var(--secondary-color);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🚀 Exportador Ifood</h2>
+    <p>Clique no botão para fazer Scrapper com os dados de produto do Ifood e gerar o CSV.</p>
+    <button id="startButton">Iniciar Importação</button>
+    <p id="statusMessage"></p>
+    <a id="downloadLink"></a>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
